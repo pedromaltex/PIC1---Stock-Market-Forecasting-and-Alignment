@@ -8,6 +8,8 @@ import yfinance as yf
 import matplotlib.pyplot as plt
 import numpy as np
 import datetime
+import os
+
 
 import requests
 from datetime import datetime, timezone
@@ -15,7 +17,7 @@ from datetime import datetime, timezone
 from yahooquery import Screener
 
 # Defina sua chave API do Finnhub
-API_KEY = "cv3qp99r01ql2eusvo70cv3qp99r01ql2eusvo7g" 
+API_KEY = os.getenv("FINNHUB_API_KEY")
 
 def apology(message, code=400):
     """Render message as an apology to user."""

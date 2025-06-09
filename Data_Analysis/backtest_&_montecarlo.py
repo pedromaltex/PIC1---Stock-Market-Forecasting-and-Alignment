@@ -1,29 +1,37 @@
 # %%
+import sys
+import os
+
+# Caminho absoluto para o diretório onde está 'aux_functions'
+sys.path.append(os.path.abspath(os.path.join(os.getcwd(), "Data_Analysis")))
+
 import matplotlib.pyplot as plt
 import yfinance as yf
 import pandas as pd
 import numpy as np
-from plotter import plot1, plot2, plot3, plot4, plot5, plot6, plot7, plot8, plot9, plot10
-from helper import future_brownian
+from aux_functions.plotter import plot1, plot2, plot3, plot4, plot5, plot6, plot7, plot8, plot9, plot10
+from aux_functions.helper import future_brownian
+
+#from aux_functions.helpers import future_brownian
 ####################################
 # Objetivo: Regressão linear SP500 #
 ####################################
 Monthly_investment = 500
-Year = 2000
+Year = 2025
 simulacoes = 10000
-Future_Years = 5
+Future_Years = 20
 
 
 # Função para obter os dados históricos do S&P 500
 def get_data(symbol='^GSPC', period='80y', interval='1mo'):
     data = yf.download(tickers=symbol, period=period, interval=interval)
-    data.to_pickle("S&P500.pkl")
+    data.to_pickle("/home/pedro-maltez-ubuntu/Documents/PIC1---Stock-Market-Forecasting-and-Alignment/Data_Analysis/S&P500_Data/S&P500.pkl")
     data = data[['Close']].reset_index()
     return data
 
 try:
     # Carregar de volta (sem perda de tipo)
-    sp500_data = pd.read_pickle("/home/pedro-maltez-ubuntu/Documents/PIC2/flask_app/help/S&P500.pkl")
+    sp500_data = pd.read_pickle("/home/pedro-maltez-ubuntu/Documents/PIC1---Stock-Market-Forecasting-and-Alignment/Data_Analysis/S&P500_Data/S&P500.pkl")
     name = 'S&P 500'
 except:
     # Obter dados históricos do S&P 500

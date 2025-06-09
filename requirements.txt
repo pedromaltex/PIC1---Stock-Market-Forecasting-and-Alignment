@@ -4,3 +4,7 @@ pandas
 numpy
 notebook
 jupyterlab
+flask
+datetime
+yahooquery
+seaborn
