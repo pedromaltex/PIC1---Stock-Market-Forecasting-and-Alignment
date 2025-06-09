@@ -1,4 +1,4 @@
-# 📈 Stock Market Forecasting and Investment Strategy Optimization - PIC1
+# 📈 Stock Market Forecasting and Investment Strategy Optimization
 
 **Bachelor’s Integrative Project (PIC1)**  
 Author: Pedro Maltez  
