@@ -16,6 +16,8 @@ This project analyzes the S&P 500 index using historical data, applies statistic
 - **yFinance** – Market data
 - **Custom Modules** – `plotter.py`, `helper.py` for visual and simulation support
 
+[Veja o notebook](Data_Analysis/results.ipynb)
+
 ## 📊 Features
 
 - **Logarithmic Regression** on historical S&P 500 prices
