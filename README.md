@@ -36,14 +36,14 @@ This project analyzes the S&P 500 index using historical data, applies statistic
 │   ├── aux_functions/
 │   │   ├── plotter.py      # Plotting tools
 │   │   └── helper.py       # Simulations & helpers
-├── main_script.py          # Main analysis script
+├── backtest_&_montecarlo.py          # Main analysis script
 └── README.md               # This file
 ```
 
 ## 📈 Sample Outputs
 
 - S&P 500 vs. exponential regression curve
-- Heatmaps of investment allocation
+- Histogram of investment allocation
 - Comparison of portfolio growth
 - ROI histograms from simulations
 
