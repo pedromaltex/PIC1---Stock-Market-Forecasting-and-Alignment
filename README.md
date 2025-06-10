@@ -15,8 +15,9 @@ This project analyzes the S&P 500 index using historical data, applies statistic
 - **Matplotlib** – Visualizations
 - **yFinance** – Market data
 - **Custom Modules** – `plotter.py`, `helper.py` for visual and simulation support
+- **Jupyter Notebook** – [Full notebook](Data_Analysis/results.ipynb)
 
-[Full notebook](Data_Analysis/results.ipynb)
+
 
 ## 📊 Features
 
