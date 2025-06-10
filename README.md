@@ -44,7 +44,7 @@ This project analyzes the S&P 500 index using historical data, applies statistic
 
 ## 📈 Sample Outputs
 
-- S&P 500 vs. exponential regression curve
+- S&P 500 vs. exponential regression curve ![S&P 500 vs. exponential regression curve](Data_Analysis/results/exp_vs_sp500.png)
 - Histogram of investment allocation
 - Comparison of portfolio growth
 - ROI histograms from simulations
